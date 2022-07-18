@@ -5,12 +5,15 @@ body {
 }
 main {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
-.top-container {
+.container {
   background-color: white;
   width: 870px;
   padding: 1.5%;
+  margin-top: 21px;
+  border-radius: 10px;
 }
 .font-style {
   color: #562eff;
@@ -56,4 +59,45 @@ hr {
 .blog-topic a {
   text-decoration: none;
   color: #562eff;
+}
+.latest-course img {
+  width: 100%;
+}
+.latest-course {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.latest-course article {
+  padding: 5%;
+  box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.138);
+  border-radius: 20px;
+  margin-right: 10px;
+}
+.course-info {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  justify-content: space-between;
+}
+.star {
+  display: flex;
+  margin-right: 20px;
+}
+.star .filled {
+  color: gold;
+}
+.star .empty {
+  color: rgba(128, 128, 128, 0.4);
+}
+.clock {
+  display: flex;
+  align-items: center;
+  color: #ff4a60;
+  background: #ffe4e8;
+  border-radius: 14px;
+  padding: 2%;
+  height: 20px;
+}
+.time {
+  margin-left: 5px;
 }
